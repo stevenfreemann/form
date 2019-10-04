@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Formulario Registro Sueldo</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h1>Registro</h1>
+            <h:form>
+                <h:outputLabel value="Nombre: "></h:outputLabel>
+                <h:inputText value="#{controladorIndex.nombre}"></h:inputText><br></br>
+                <h:outputLabel value="Profesion: "></h:outputLabel>
+                <h:selectOneMenu value="#{controladorIndex.profesion}">
+                    <f:selectItem itemValue="ingeniero" itemLabel="Ingeniero - $ 200.000"></f:selectItem>
+                    <f:selectItem itemValue="tecnologo" itemLabel="Tecnologo - $ 150.000"></f:selectItem>
+                    <f:selectItem itemValue="tecnico" itemLabel="Tecnico - $ 100.000"></f:selectItem>
+                    <f:selectItem itemValue="auxiliar" itemLabel="Auxiliar - $ 50.000"></f:selectItem>
+                </h:selectOneMenu><br></br>
+                <h:selectOneRadio value="#{controladorIndex.genero}">
+                    <f:selectItem itemValue="señor" itemLabel="Masculino"></f:selectItem>
+                    <f:selectItem itemValue="señora" itemLabel="Femenino"></f:selectItem>
+                </h:selectOneRadio><br></br>
+                <h:outputLabel value="Días Trabajados: "></h:outputLabel>
+                <h:inputText value="#{controladorIndex.diasTrabajados}"></h:inputText><br></br>
+                <h:outputLabel value="Idioma Dominado: "></h:outputLabel>
+                <h:selectManyCheckbox value="#{controladorIndex.idiomasDominados}">
+                    <f:selectItem itemValue="español" itemLabel="Español"></f:selectItem>
+                    <f:selectItem itemValue="ingles" itemLabel="Ingles"></f:selectItem>
+                    <f:selectItem itemValue="frances" itemLabel="Frances"></f:selectItem>
+                    <f:selectItem itemValue="aleman" itemLabel="Aleman"></f:selectItem>
+                </h:selectManyCheckbox><br></br>
+                <h:selectOneRadio value="#{controladorIndex.ubicacion}">
+                    <f:selectItem itemValue="facatativa" itemLabel="Facatativa"></f:selectItem>
+                    <f:selectItem itemValue="fuera de faca" itemLabel="Otro"></f:selectItem>
+                </h:selectOneRadio><br></br>
+                <h:commandButton value="Envíar" action="sueldo?faces-redirect=true"></h:commandButton>
+            </h:form>
+        </center>
+    </h:body>
+</html>
+
