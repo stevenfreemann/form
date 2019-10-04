@@ -10,7 +10,7 @@ import javax.faces.bean.SessionScoped;
 
 /**
  *
- * @author Yonathan
+ * @author wilson steven rodriguez
  */
 @ManagedBean
 @SessionScoped

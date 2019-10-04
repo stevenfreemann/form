@@ -9,7 +9,8 @@ import com.mycompany.controlador.controladorSueldo;
 
 /**
  *
- * @author Yonathan
+ * @author Wilson Steven rodriguez
+ * @author jhony rojas
  */
 public class modeloSueldo {
     

@@ -13,7 +13,7 @@ import javax.faces.bean.ManagedProperty;
 
 /**
  *
- * @author Yonathan
+ * @author wilson steven rodriguez
  */
 @ManagedBean
 @RequestScoped
